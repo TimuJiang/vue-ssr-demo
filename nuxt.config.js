@@ -24,7 +24,9 @@ module.exports = {
 	/*
 	** Global CSS
 	*/
-	css: [],
+	css: [
+		'assets/reset.css'
+	],
 	/*
 	** Plugins to load before mounting the App
 	*/
@@ -68,12 +70,6 @@ module.exports = {
 		** You can extend webpack config here
 		*/
 		extend(config, ctx) {
-			config.resolve = {
-				alias: {
-					components: path.resolve(__dirname, 'components'),
-					assets: path.resolve(__dirname, 'assets')
-				}
-			}
 		}
 	}
 }

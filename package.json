@@ -11,12 +11,12 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
     "cross-env": "^5.2.0",
-    "koa": "^2.6.2"
+    "koa": "^2.10.0",
+    "nuxt": "^2.10.1"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.0.0",
+    "@nuxtjs/vuetify": "^1.9.0",
     "nodemon": "^1.18.9",
     "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0"

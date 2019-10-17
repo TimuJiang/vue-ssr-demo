@@ -1,9 +1,9 @@
 <template lang="pug">
 	v-layout( column justify-center align-center)
+		m-banner
 		v-flex(xs12 sm8 md6)
 			v-card
 				v-card-title.headline
-					Welcome to the Vuetify + Nuxt.js template
 				v-card-text
 					p Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.
 					p
@@ -29,13 +29,10 @@
 </template>
 
 <script>
-	import Logo from '~/components/Logo.vue'
-	import VuetifyLogo from '~/components/VuetifyLogo.vue'
-
+    import MBanner from '~/components/m-banner'
 	export default {
 		components: {
-			Logo,
-			VuetifyLogo
+            MBanner
 		}
 	}
 </script>

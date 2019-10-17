@@ -1,11 +1,15 @@
-<template>
-	<m-header></m-header>
+<template lang="pug">
+	.default-layout
+		m-header
+		nuxt
+		m-footer
 </template>
 
 <script>
-	import MHeader from '../components/layout/m-header'
+	import MHeader from '~/components/layout/m-header'
+	import MFooter from '~/components/layout/m-footer'
 	export default {
-		components: { MHeader },
+		components: { MHeader, MFooter },
 		data() {
 			return {
 				clipped: false,
