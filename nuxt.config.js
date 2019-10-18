@@ -40,7 +40,18 @@ module.exports = {
 	/*
 	** Nuxt.js modules
 	*/
-	modules: [],
+	modules: [
+		'@nuxtjs/axios',
+		'@nuxtjs/proxy'
+	],
+	axios: {
+		prefix: 'https://mall.geely.com/mapi',
+		proxy: true
+	},
+	proxy: {
+		'/mapi': 'https://mall.geely.com',
+		changeOrigin: true
+	},
 	/*
 	** vuetify module configuration
 	** https://github.com/nuxt-community/vuetify-module
